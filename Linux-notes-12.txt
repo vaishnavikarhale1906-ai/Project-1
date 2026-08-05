@@ -1,0 +1,598 @@
+
+
+		[rohit@localhost ~]$ 		=> prompt
+		rohit 				=> Local Logged In user
+		@ 				=> separator/divider
+		localhost			=> machine/system name
+		~ 
+		$				=> indicate we logged as Local user 
+
+		[root@localhost ~] #		=> Super User logged Logged In
+		
+		# useradd username
+		# useradd aniket		=> to add new local user
+	
+		# passwd Aniket			=> to set new password
+
+		[rohit ]$  su - Aniket		=> ask password
+		[root ] # su - Aniket 		=> not ask password
+		# 				=> Super User(root)
+		$				=> Local user(Aniket,rohit)
+
+               
+                # userdel username
+                # userdel Aniket                => to remove local user
+
+                # userdel -r username
+                # userdel -r Aniket             => to remove local user + home directory
+
+
+
+		Computers
+	
+	PC			server
+	Lap,computer		Server
+	Bike 			Train
+				Capacity,speed,usrs,
+				strength . etc...
+	---------------------------------
+	OPERATING SYSTEM - OS SOFTWARE- PC - LIVE
+
+		OS
+	
+	Computer	Mobile
+	----------------------
+	Window		Android
+	Linux		Ios-Iphone
+	Mac		Symbian
+			Mayaos
+	------------------------
+	
+		 COMPUTER
+
+	PC			SERVER
+
+	WINDOWS - 90%		WINDOWS - 5%
+	LINUX - 3%		LINUX   - 90%
+	MAC - 7%		OTHER   - 5%
+
+===================================================
+	1969 - Dennis Ritchie , Ken Thompson
+	Unix - OS - s/w
+	1.Business purpose -  
+	2. Paid
+	3. Coding - close source
+	4. Secure + Popular
+	------------------
+	1983 - Richard Stallman - GNU Project
+	Activist - moments 
+	GNU - Gnu not Unix - 
+	Purpose : 
+	S/w free to use, Free to study , Modify (Opensource) , Public , Common People.
+	FSF- Free software foundation - 
+	Community - team 
+	OS x - 
+	------------------
+	1991 - 21 year - Linus Torvalds
+	Kernal -  Os. s/w heart
+
+	Linux/GNU - Open source -> Modify , Os launch.
+
+			Linux - code 10K
+	
+	Debian		Red hat 	
+	Free		Coperate/Business (Paid)
+	PC		Servers:
+			
+	Ubuntu		Redhat
+	Kali 		Free : Centos,Rocky , Alma
+	Parrot
+	
+	server :
+	
+	Ubuntu ser
+
+=================================
+12 Jun 2026
+
+
+mkdir demo1		=> to create 1 dir/folder
+mkdir demo2 demo3	=> to create 2 dir
+mkdir demo{4..100}	=> to create multiple dir
+mkdir {a..z}		=> to create a to z dir
+mkdir "Aniket mapari"	=> to create two word dir
+
+ls 			=> list contents
+clear 			=> clear terminal
+
+---------------------
+rmdir demo1 		=> to delete 1 dir
+rmdir demo2 demo3	=> to delete 2 dir
+rmdir demo{4..50}	=> to delte multiple dir
+rmdir {a..z}		=> to delete {a..z} dir
+rmdir "Aniket mapari" 	=> to delete 2 word dir
+
+date 			=> full date
+date +%d		=> only date (12)
+date +%m
+date +%y
+date +%Y
+date +%D
+date +%H
+date +%M
+date +%S
+
+=======================
+15 Jun 
+
+FILES = create , remove , cp ,move ,rename , 
+read , write
+
+TO CREATE :
+
+$# touch file1		=> to create single file
+#$ touch file2 file3	=> to create 2 files
+#$ touch file{4..50}	=> to create multiple file
+#$ touch {a..z}		=> to create a to z file.
+#$ touch "Aarush sonav"	=> to create 2 word file
+
+------------
+TO REMOVE/DELETE:
+
+#$ rm file1 		=> to remove single file
+#$ rm file2 file3	=> to remove 2 files
+#$ rm file{4..50}	=> to remove multiple file
+#$ rm {a..z}		=> to remove a to z file.
+#$ rm "Aarush sonav"	=> to remove 2 word file
+
+
+------------
+
+TO COPY :
+
+#$ cp source destination	
+#$ cp file1 demo		=> copy file1 into demo
+
+#$ cp file{1..10} demo		=> copy 10 files into demo
+
+------------
+
+TO MOVE/CUT :
+
+#$ mv source destination	
+#$ mv file1 demo		=> move/cut file1 into demo
+
+#$ mv file{1..10} demo		=> move 10 files into demo
+
+-------------
+
+
+TO RENAME: we can only rename one file at time.
+
+#$ mv oldname newname		=> to rename
+
+--------------
+
+TO READ:
+
+#$ cat filename		=> contain of file
+#$ cat file100		=> contain of file100
+
+--------------
+
+TO WRITE :
+
+#$ echo "Hello World"	=> only print	
+
+
+#$ echo "Hello world" > file100		=> write HW in file100
+
+#$ cat file100
+
+
+16 Jun 2026
+
+
+	#$ echo "HW" 		=> print jase che tase
+	#$ echo "HW" > file	=> file madhe jase che tase lihle jate.	new data add old 				   delete hoto.
+	#$ echo "HW" >> file	=> juna data tasa ch rahta , new data add hoto.
+
+	#$ man ls		=>  manual of ls command(info)
+	#$ man ls > file3	=>  we write info of ls command in file3 q			#$ head			=> top 10 line of file
+	#$ head -n 15 file3	=> top 15 lines
+	#$ tail 		=> bottom/last 10 lines
+	#$ tail -n 11 file3	=> bottom/last 11 lines
+	#$ more file3		=> file reading mode open(%)	exit- q
+	#$ less file3		=> file reading mode open 
+
+
+	-----------
+	#$ free			=> memory (ram)
+	#$ free -h -k -m -g	
+
+	man - info about command
+
+	#$ man ls
+	#$ man mkdir
+	#$ man rmdir
+
+	info - info about command
+
+	#$ info ls
+	#$ info mkdir
+	#$ info rmdir
+	
+	--------
+	ls --help		=> option info
+	mkdir --help		=> option 	
+	
+================================================
+
+	Folder /dir - create,delete,move,copy, rename
+	date option
+	cal option
+	File - create , remove,move ,copy,rename, write , read
+	
+
+	ls 	=> list contents
+	ls -l	=> alphabetical order
+	ls -ltr => list timewise
+	ls -a 	=> hidden & visible content (files,folders)
+	lscpu	=> cpu processor details
+	lspci	=> devices details - pci = peripheral connectivity interface(devices)
+	lsusb	=> usb details
+
+-------------------------------------------------------
+
+	whoami 		=> loggedIn username
+	uname		=> Kernal name(Linux)
+	uname -a	=> Kernal details
+
+	shutdown	=> shutdown after 1 min
+	shutdown -c	=> to cancle shutdown
+	shutdown now	=> to shutdown now
+	reboot		=> to restart machine
+=====================================================
+
+
+	20 Jun 2026
+
+	2 . Editors - File write operation
+	In Linux everything is file & folder(file).
+
+	GUI  - Graphical User Interface 
+	CLI  - Command Line Interface 
+
+	------------
+	Windows - GUI -
+	Notepad, sublime,vscode,wordpad,msword
+
+	Linux 
+	GUI - TextEditor,Libreoffice
+	CLI - nano , vi, vim
+-----------------------------------
+	#$ nano file1		=> to create and edit file using nano.
+	Ctrl + O		=> Write out
+	Ctrl + X		=> Exit
+	#$ cat file1		=> Read the contains of file1
+----------------------------------------
+	#$ vi file4		=> to create and edit file using vi editor.
+	i			=> Insert mode
+	esc			=> Escape from Insert mode
+	:wq			=> write & Quite
+	
+	#$ cat file4		=> Read the contains of file4
+	
+---------------------------------------
+	VIM : 4 modes
+	1. Command Mode
+	2. Insert Mode
+	3. Execution mode
+	4. Visual Mode
+----------------------
+	1. Command Mode:
+		i 	=> insert mode
+		esc	=> mode chya baher yeto.
+		:wq	=> write & quite 	
+		gg	=> top la jate
+		G	=> bottom la jate		
+
+		yy 	=> 1 line copy
+		10yy	=> 10 line copy
+
+		p	=> paste - cursor chya khali
+		P	=> paste - cursor chya var
+		dd	=> delete single line
+		20dd	=> delete 20 lines
+		dw	=> delete word
+		u	=> undo (return changes)
+
+2. Insert Mode
+		i	=> insert mode madhe janya sathi
+		I	=> Line chya start la janya sathi
+		A	=> Line chya last la janya sathi
+		O	=> create new line above the cursor
+		o 	=> create new line below the cursor
+
+3. Execution Mode
+
+		:wq	=> write & quite
+		:w	=> only write
+		:q 	=> only quite
+		:w! 	=> forcefully write
+		:q!	=> forcefully quite
+		:set nu	=> set number
+		:set nonu	=> remove number	
+		:/word		=> search
+		:nohl		=> no highlight
+4. Visual Mode - reading mode
+		v	=> visual mode
+		esc	=> exit from visual mode
+		arrow	=> scroll 
+=========================================================
+26 Jun 
+	3. User & Group Management
+
+
+	Linux - Multiuser os.
+	
+	3 Users 
+	1. Super User(root) - Only one - 0 
+	2. Local User (Rohit,aarush,komal) - multiple - 1001
+	3. Service User(tools,s/w) - multiple 
+--------------------------
+
+		2. Local User (Rohit,aarush,komal) - multiple
+
+	# useradd user1 	=>to add new user
+	# passwd user1		=> to set new password
+	# userdel user1		=> delete only user
+	# userdel -r user1	=> delete user + home dir
+
+	------------------------
+	When you add new local user :
+	8 change/entries:
+	
+	1. uid & gid - /etc/passwd
+	2. home dir create - /home
+	3. /etc/passwd
+	4. /etc/shadow
+	5. /etc/group
+	6. /etc/gshadow
+	7. /etc/skel/ file copy user home dir
+	8. /var/spool/ create new file for user
+	9. Usermod - userdetails update
+	10. Groupmod - groupdetails update
+
+-----------------------------------------------
+	/etc/passwd
+	
+	username:x:uid:gid:comment:homedir:shell
+		
+	user1: x : 1010 : 1010 : : /home/user1 : /bin/bash
+
+	# useradd -u userid username		=> add user with uid
+	# useradd -u 1013 user3		
+
+	# useradd -g gid username		=> add user with gid
+	# useradd -g 1009 user4	
+
+	# useradd -c "Java Dev" user5		=> add user with comment
+
+	# useradd -d /home/dirname user6	=> add user with different home dir.
+	# useradd -d /home/Akanksha user6	
+	
+	# useradd -s /sbin/nologin username	=> add user with shell
+							(/bin/bash , /sbin/nologin)
+
+	# useradd -u 1019 -g 1009 -c "Comment" -d /home/gita -s /sbin/nolgoin user7
+	
+------------------------------------
+
+	4. /etc/shadow  - Credentials - account,password etc.. related kaam kele jata.
+
+	# cat /etc/shadow 		=> to check users.
+
+	# chage -l kartik		=> to check account details
+
+	# chage -m 2 kartik		=> minimum days set 
+					2 diwasapahile password change karta yenar nahi	
+	# chage -M 10 kartik		=> Maximum days set
+					Mhanje tumcha password tya 10 diwasparynt valid asel
+
+	# chage -W 5 kartik		=> to set warning -> 5 days pahile warning yetil
+	
+	# chage -E "12 Aug" kartik	=> to set Account expire(Not allow login)
+	# chage -I 5 Kartik		=> to set Inactive days (5 diwas password ankhi chalel)
+
+	# date -s "12 Aug 2026"		=> date change
+	# date -s "10:20 PM"		=> time change
+	# date -s "12 Aug 2026 10:20 PM" => date & time changes
+
+=================================================
+	1 Jul 2026
+
+	5. /etc/group  - groupname: x : gid : members
+	6. /etc/gshadow- groupname : password: Admin : members
+
+	# cat/tail /etc/group
+	# cat/tail /etc/gshadow
+	
+	# groupadd grouname		=> to create a group
+	# groupadd Codingwale
+
+	# gpasswd Codingwale		=> to set new password to group
+
+	# groupadd -g 1014 Linux	=> Add new group with gid
+	
+	# gpasswd -a komal Linux	=> Add Single user to group
+	# gpasswd -M rohit,kartik Linux	=> Add Multiple users to group
+					(note: old user will be removed)
+
+
+	# gpasswd -A komal Linux	=> to assign admin
+	# gpasswd -A '' Linux		=> to remove admin	
+
+	# gpasswd -d rohit Codingwale	=> to remove a single user from group
+-----------------------------------------------------------------------
+
+	8. /var/spool/ create new file for user
+
+Check if Postfix is installed
+
+#$ rpm -q postfix
+
+If it's not installed:
+
+# yum install postfix -y
+
+Start and enable Postfix
+# systemctl enable postfix
+
+# systemctl start postfix
+
+Send an email
+
+If you have the mail command installed:
+
+Only root can send mail :
+
+# echo "Test email body" | mail -s "Test Subject" Rohit
+
+Sai to Rohit:
+
+sai $  echo "Test email body" | mail -s "Test Subject" Rohit@localhost.localdomain
+
+----------------
+
+How to change - machine , hostname ?
+
+# hostnamectl set-hostname newhostname
+
+-------------------------------------------------------
+
+
+	9. Usermod - userdetails update - /etc/passwd 	
+		# usermod -l newname oldname	=> rename user
+		# usermod -u uid username	=> to update uid
+		# usermod -g gid username	=> to update gid
+		# usermod -c "Comment" username	=> to update comment
+	# usermod -d /home/aarush1 Aarush	=> to update home dir
+	# usermod -u 1001 -g 1001 -c "Comment" -d /home/Aarush Aarush => All in One update user details
+		
+	10. Groupmod - groupdetails update  - /etc/group, /etc/gshadow
+	
+	# groupmod -n newname oldname		=> rename group
+	# groupmod -g gid groupname		=> to update gid
+
+----------------------------------------------------------------
+
+		
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+	
+
+
+
+	
+
+
+
+	
+
+	
+
+
+
+
